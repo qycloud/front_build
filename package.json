@@ -1,0 +1,20 @@
+{
+  "name": "resource_build",
+  "version": "0.0.1",
+  "author": "Tom.Huang <hzlhu.dargon@gmail.com>",
+  "dependencies": {
+    "shelljs": "0.1.x",
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "keys": [
+    "javascript",
+    "css",
+    "resource",
+    "build",
+    "web"
+  ],
+  "repository": "git://github.com/NanJingBoy/resource_build"
+}
