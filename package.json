@@ -2,6 +2,13 @@
   "name": "resource_build",
   "version": "0.0.1",
   "author": "Tom.Huang <hzlhu.dargon@gmail.com>",
+  "contributors": [
+    {
+      "name": "superbug",
+      "email": "sunweijun1989@gmail.com"
+    }
+  ],
+  
   "dependencies": {
     "shelljs": "0.1.x",
     "underscore": "1.4.x"
