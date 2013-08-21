@@ -27,6 +27,6 @@ describe('Config(__dirname + "/../../config.json")', function() {
     describe('#get("path", "components")', function() {
         it('should be equal ', function() {
             config.get('path', 'components').should.equal(configs['path']['components']);
-        })
+        });
     });
 });
