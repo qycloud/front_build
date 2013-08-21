@@ -1,0 +1,55 @@
+{
+    "jquery": {
+        "javascript": ["jquery/jquery.js"]
+    },
+
+    "jquery_ui_core": {
+        "javascript": [
+	    "res:jquery",
+	    "jquery/ui/jquery.ui.core.js"
+        ],
+	"css": [
+	    "jquery/ui/themes/base/jquery.ui.core.css",
+	    "jquery/ui/themes/base/jquery.ui.theme.css"
+	]
+    },
+
+    "jquery_ui_mouse": {
+        "javascript": [
+	    "res:jquery_ui_core",
+	    "jquery/ui/jquery.ui.widget.js",
+	    "jquery/ui/jquery.ui.mouse.js"
+	],
+	"css": [
+	    "res:jquery_ui_core",
+	    "jquery/ui/themes/base/jquery.ui.widget.css",
+	    "jquery/ui/themes/base/jquery.ui.mouse.css"
+	]
+    },
+
+    "jquery_ui_button": {
+        "javascript": [
+	    "res:jquery_ui_mouse",
+	    "jquery/ui/jquery.ui.button.js"
+	],
+	"css": [
+	    "res:jquery_ui_mouse",
+	    "jquery/ui/themes/base/jquery.ui.button.css"
+	]
+    },
+
+    "jquery_ui_dialog": {
+        "javascript": [
+	    "res:jquery_ui_button",
+	    "jquery/ui/jquery.ui.draggable.js",
+	    "jquery/ui/jquery.ui.position.js",
+	    "jquery/ui/jquery.ui.dialog.js"
+	],
+	"css": [
+	    "res:jquery_ui_button",
+	    "jquery/ui/themes/base/jquery.ui.draggable.css",
+	    "jquery/ui/themes/base/jquery.ui.position.css",
+	    "jquery/ui/themes/base/jquery.ui.dialog.css"
+	]
+    }
+}
