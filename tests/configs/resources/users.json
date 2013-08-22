@@ -1,0 +1,12 @@
+{
+    "users@index": {
+        "javascript": [
+            "res:jquery_ui_dialog",
+            "users.js"
+        ],
+        "css": [
+            "res:jquery_ui_dialog"
+        ],
+        "dest_prefix": "users-min"
+    }
+}

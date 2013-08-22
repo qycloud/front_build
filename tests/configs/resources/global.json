@@ -1,0 +1,6 @@
+{
+    "global": {
+        "javascript": ["res:jquery"],
+        "css": ["base.css"]
+    }
+}

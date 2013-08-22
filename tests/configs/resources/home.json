@@ -1,0 +1,6 @@
+{
+    "home@index": {
+        "javascript": ["home.js"],
+        "dest_prefix": "home-min"
+    }
+}
