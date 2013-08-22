@@ -1,5 +1,12 @@
 {
     "path": {
-        "components" : "fixtures/components.json"
+        "build_dest": "build",
+        "components_config": "configs/components.json",
+        "resources_config": "configs/resources"
+    },
+    "prefix": {
+        "resources_controller": "controllers",
+        "resources_css": "assets/stylesheets",
+        "resources_javascript": "assets/javascripts"
     }
 }

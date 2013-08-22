@@ -5,7 +5,14 @@ var mocha = require('mocha'),
 describe('Config(__dirname + "/../../.buildrc")', function() {
     var configs = {
             "path": {
-                "components" : "fixtures/components.json"
+                "build_dest": "build",
+                "components_config": "configs/components.json",
+                "resources_config": "configs/resources"
+            },
+            "prefix": {
+                "resources_controller": "controllers",
+                "resources_css": "assets/stylesheets",
+                "resources_javascript": "assets/javascripts"
             }
         },
         config = new Config(__dirname + '/../../.buildrc');
@@ -24,9 +31,9 @@ describe('Config(__dirname + "/../../.buildrc")', function() {
         });
     });
 
-    describe('#get("path", "components")', function() {
+    describe('#get("path", "components_config")', function() {
         it('should be equal ', function() {
-            config.get('path', 'components').should.equal(configs['path']['components']);
+            config.get('path', 'components_config').should.equal(configs['path']['components_config']);
         });
     });
 });
