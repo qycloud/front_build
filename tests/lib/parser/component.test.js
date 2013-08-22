@@ -2,7 +2,7 @@ var mocha = require('mocha'),
     should = require('should'),
     Component = require('../../../lib/parser/component');
 
-describe('Component(__dirname + "/../../fixtures/components.json")', function() {
+describe('Component(__dirname + "/../../configs/components.json")', function() {
     var components = {
             "jquery": {
                 "javascript": ["jquery/jquery.js"],
@@ -29,9 +29,7 @@ describe('Component(__dirname + "/../../fixtures/components.json")', function() 
                 ],
                 "css": [
                     "jquery/ui/themes/base/jquery.ui.core.css",
-                    "jquery/ui/themes/base/jquery.ui.theme.css",
-                    "jquery/ui/themes/base/jquery.ui.widget.css",
-                    "jquery/ui/themes/base/jquery.ui.mouse.css"
+                    "jquery/ui/themes/base/jquery.ui.theme.css"
                 ]
             },
 
@@ -46,8 +44,6 @@ describe('Component(__dirname + "/../../fixtures/components.json")', function() 
                 "css": [
                     "jquery/ui/themes/base/jquery.ui.core.css",
                     "jquery/ui/themes/base/jquery.ui.theme.css",
-                    "jquery/ui/themes/base/jquery.ui.widget.css",
-                    "jquery/ui/themes/base/jquery.ui.mouse.css",
                     "jquery/ui/themes/base/jquery.ui.button.css"
                 ]
             },
@@ -66,16 +62,12 @@ describe('Component(__dirname + "/../../fixtures/components.json")', function() 
                 "css": [
                     "jquery/ui/themes/base/jquery.ui.core.css",
                     "jquery/ui/themes/base/jquery.ui.theme.css",
-                    "jquery/ui/themes/base/jquery.ui.widget.css",
-                    "jquery/ui/themes/base/jquery.ui.mouse.css",
                     "jquery/ui/themes/base/jquery.ui.button.css",
-                    "jquery/ui/themes/base/jquery.ui.draggable.css",
-                    "jquery/ui/themes/base/jquery.ui.position.css",
                     "jquery/ui/themes/base/jquery.ui.dialog.css"
                 ]
             }
         },
-        component = new Component(__dirname + '/../../fixtures/components.json');
+        component = new Component(__dirname + '/../../configs/components.json');
 
     describe('#parse()', function() {
         it('should equality', function() {

@@ -21,9 +21,7 @@
             "jquery/ui/jquery.ui.mouse.js"
         ],
         "css": [
-            "res:jquery_ui_core",
-            "jquery/ui/themes/base/jquery.ui.widget.css",
-            "jquery/ui/themes/base/jquery.ui.mouse.css"
+            "res:jquery_ui_core"
         ]
     },
 
@@ -47,8 +45,6 @@
         ],
         "css": [
             "res:jquery_ui_button",
-            "jquery/ui/themes/base/jquery.ui.draggable.css",
-            "jquery/ui/themes/base/jquery.ui.position.css",
             "jquery/ui/themes/base/jquery.ui.dialog.css"
         ]
     }
