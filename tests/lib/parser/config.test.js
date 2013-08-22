@@ -2,13 +2,13 @@ var mocha = require('mocha'),
     should = require('should'),
     Config = require('../../../lib/parser/config');
 
-describe('Config(__dirname + "/../../config.json")', function() {
+describe('Config(__dirname + "/../../.buildrc")', function() {
     var configs = {
             "path": {
                 "components" : "fixtures/components.json"
             }
         },
-        config = new Config(__dirname + '/../../config.json');
+        config = new Config(__dirname + '/../../.buildrc');
 
     config.read();
 
