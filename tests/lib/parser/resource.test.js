@@ -2,8 +2,8 @@ var mocha = require('mocha'),
     should = require('should'),
     Resource = require('../../../lib/parser/resource');
 
-describe('Resource(__dirname + "/../../.buildrc")', function() {
-    var resource = new Resource(__dirname + '/../../.buildrc');
+describe('Resource(__dirname + "/../../.rbuildrc")', function() {
+    var resource = new Resource(__dirname + '/../../.rbuildrc');
 
     describe('#getConfigs()', function() {
         var configs = {

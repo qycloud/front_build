@@ -2,7 +2,7 @@ var mocha = require('mocha'),
     should = require('should'),
     Config = require('../../../lib/parser/config');
 
-describe('Config(__dirname + "/../../.buildrc")', function() {
+describe('Config(__dirname + "/../../.rbuildrc")', function() {
     var configs = {
             "path": {
                 "build_dest": "build",
@@ -15,7 +15,7 @@ describe('Config(__dirname + "/../../.buildrc")', function() {
                 "resources_javascript": "assets/javascripts"
             }
         },
-        config = new Config(__dirname + '/../../.buildrc');
+        config = new Config(__dirname + '/../../.rbuildrc');
 
     config.read();
 
