@@ -1,4 +1,5 @@
-var mocha = require('mocha'),
+var fs = require('fs'),
+    mocha = require('mocha'),
     should = require('should'),
     Resource = require('../../../lib/parser/resource');
 
@@ -78,5 +79,24 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
         it('should equality', function() {
             resource.parse().should.eql(resources);
         })
+    });
+
+    describe('#save()', function() {
+        it('should equality', function() {
+            var resources = {
+                "controllers/home@index": {
+                    "javascript": "home-min_1b6316803455be0c0bdbe08fd52c44b5.js",
+                    "css": "home-min_15a63a0c6a738eb8de8e823d2b5aafda.css"
+                },
+                "controllers/users@index": {
+                    "javascript": "users-min_f9681fdf76cf085a6c5b2295112398de.js",
+                    "css": "users-min_48d508549dffd696499a5173ef898c13.css"
+                }
+            };
+            resource.save();
+            JSON.parse(
+                fs.readFileSync(__dirname + '/../../rbuild.lock'
+            ).toString()).should.eql(resources);
+        });
     });
 });
