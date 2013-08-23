@@ -8,44 +8,35 @@ var _ = require('underscore'),
 describe('Build(configs)', function() {
     var build = new Build({
         config: __dirname + '/../.rbuildrc',
-        store: true
+        store: true,
+        force: false
     });
 
     describe('#run()', function() {
-        it('should be true', function() {
-            build.run().should.be.true;
-        });
-    });
-});
+        build.run();
 
-describe('Read __dirname + "/../build" directory', function() {
-    function md5Files(directory) {
-        var files,
-            hash;
-
-        if (fs.existsSync(directory)) {
-            files = fs.readdirSync(directory);
-            if (_.size(files) <= 0) {
-                return null;
-            }
-
-            hash = [];
-            _.each(files, function(file) {
-                file = directory + file;
-                hash.push(md5(fs.readFileSync(file)));
+        describe('Read __dirname + "/../build/javascripts/" directory', function() {
+            it('File home-min_1b6316803455be0c0bdbe08fd52c44b5.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/home-min_1b6316803455be0c0bdbe08fd52c44b5.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
             });
 
-            return md5(hash.join('')).substr(0, 32);
-        }
+            it('File users-min_f9681fdf76cf085a6c5b2295112398de.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            });
+        });
 
-        return null;
-    }
+        describe('Read __dirname + "/../build/stylesheets/" directory', function() {
+            it('File home-min_15a63a0c6a738eb8de8e823d2b5aafda.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/home-min_15a63a0c6a738eb8de8e823d2b5aafda.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            });
 
-    it('Javascript files md5 value should be equal', function() {
-        md5Files(__dirname + '/../build/javascripts/').should.equal('');
+            it('File users-min_48d508549dffd696499a5173ef898c13.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/users-min_48d508549dffd696499a5173ef898c13.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            });
+        });
     });
-
-    it('Stylesheets files md5 value should be equal', function() {
-        md5Files(__dirname + '/../build/stylesheets/').should.equal('');
-    })
 });
