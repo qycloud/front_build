@@ -8,11 +8,7 @@ var _ = require('underscore'),
 describe('Build(configs)', function() {
     var build = new Build({
         config: __dirname + '/../.rbuildrc',
-        store: true,
-        buildDirectory: {
-            javascript: __dirname + '/../build/javascripts',
-            css: __dirname + '/../build/stylesheets'
-        }
+        store: true
     });
 
     describe('#run()', function() {
