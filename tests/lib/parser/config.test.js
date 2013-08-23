@@ -10,7 +10,7 @@ describe('Config(__dirname + "/../../.rbuildrc")', function() {
                 "resources_config": "configs/resources"
             },
             "prefix": {
-                "resources_controller": "controllers",
+                "resources_key": "controllers",
                 "resources_css": "assets/stylesheets",
                 "resources_javascript": "assets/javascripts"
             }
