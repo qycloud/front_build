@@ -5,7 +5,10 @@ var mocha = require('mocha'),
 describe('Config(__dirname + "/../../.rbuildrc")', function() {
     var configs = {
             "path": {
-                "build_dest": "build",
+                "build": {
+                    "javascript": "build/javascripts",
+                    "css": "build/stylesheets"
+                },
                 "components_config": "configs/components.json",
                 "resources_config": "configs/resources"
             },
