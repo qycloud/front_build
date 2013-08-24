@@ -8,11 +8,11 @@
       "email": "sunweijun1989@gmail.com"
     }
   ],
-
   "dependencies": {
     "shelljs": "0.1.x",
     "underscore": "1.4.x",
-    "MD5": "*"
+    "MD5": "*",
+    "commander": "*"
   },
   "devDependencies": {
     "mocha": "*",
@@ -25,5 +25,8 @@
     "build",
     "web"
   ],
+  "bin": {
+    "rbuild": "./bin/rbuild"
+  },
   "repository": "git://github.com/NanJingBoy/resource_build"
 }
