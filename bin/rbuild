@@ -8,7 +8,7 @@ var program = require('commander'),
 program.version('0.0.1')
     .option('-c, --config', 'set config file')
     .option('-f, --force', 'build file even it exists')
-    .option('-i, --ignore', 'unnecessary to create rbuild.lock file in your application root directory')
+    .option('-i, --ignore', 'unnecessary to create rbuild.lock file in application root directory')
     .option('-l, --log', 'display build log messages')
     .parse(process.argv);
 
