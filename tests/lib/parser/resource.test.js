@@ -8,6 +8,18 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
 
     describe('#parse()', function() {
         var resources = {
+            "controllers/global": {
+                "javascript": [
+                    "assets/javascripts/jquery/jquery.js"
+                ],
+                "css": [
+                    "assets/stylesheets/base.css",
+                ],
+                "dest": {
+                    "javascript": "controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js",
+                    "css": "controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css"
+                }
+            },
             "controllers/home@index": {
                 "javascript": [
                     "assets/javascripts/jquery/jquery.js",
@@ -58,6 +70,10 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
         describe('Read file __dirname + "/../../rbuild.lock"', function() {
             it('should equality', function() {
                 var resources = {
+                    "controllers/global": {
+                        "javascript": "controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js",
+                        "css": "controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css"
+                    },
                     "controllers/home@index": {
                         "javascript": "home-min_1b6316803455be0c0bdbe08fd52c44b5.js",
                         "css": "home-min_15a63a0c6a738eb8de8e823d2b5aafda.css"

@@ -16,6 +16,11 @@ describe('Build(configs)', function() {
         build.run();
 
         describe('Read __dirname + "/../build/javascripts/" directory', function() {
+            it('File controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            });
+
             it('File home-min_1b6316803455be0c0bdbe08fd52c44b5.js md5 value should be equal', function() {
                 var fileName = __dirname + '/../build/javascripts/home-min_1b6316803455be0c0bdbe08fd52c44b5.js';
                 md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
@@ -28,6 +33,11 @@ describe('Build(configs)', function() {
         });
 
         describe('Read __dirname + "/../build/stylesheets/" directory', function() {
+            it('File controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            });
+
             it('File home-min_15a63a0c6a738eb8de8e823d2b5aafda.css md5 value should be equal', function() {
                 var fileName = __dirname + '/../build/stylesheets/home-min_15a63a0c6a738eb8de8e823d2b5aafda.css';
                 md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
