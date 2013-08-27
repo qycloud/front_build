@@ -13,8 +13,13 @@ program.version('0.0.1')
     .parse(process.argv);
 
 
-if (program.args.length > 0) {
-    configPath = program.args[program.args.length - 1];
+if (program.config) {
+    if (program.args.length > 0) {
+        configPath = program.args[program.args.length - 1];
+    } else {
+        console.log('error: option `c` requires a value');
+        program.help();
+    }
 } else {
     configPath = shell.pwd() + '/.rbuildrc';
 }
