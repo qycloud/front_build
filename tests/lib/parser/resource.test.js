@@ -15,7 +15,7 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 ],
                 "dest": {
                     "javascript": "build/javascripts/controllers_global_b196ed432fe056c1d251d40f1fd6349c.js",
-                    "css": "build/stylesheets/controllers_global_806e041eeef5f478a718b6ed9ca9c17a.css"
+                    "css": "build/stylesheets/controllers_global_fc4e20d59b98d905bdc7d435b91d8cf1.css"
                 }
             },
             "controllers/home@index": {
@@ -28,7 +28,7 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 ],
                 "dest": {
                     "javascript": "build/javascripts/home-min_dd4320cf05806c3f000139b455f4d463.js",
-                    "css": "build/stylesheets/home-min_806e041eeef5f478a718b6ed9ca9c17a.css"
+                    "css": "build/stylesheets/home-min_fc4e20d59b98d905bdc7d435b91d8cf1.css"
                 }
             },
             "controllers/users@index": {
@@ -52,7 +52,7 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 ],
                 "dest": {
                     "javascript": "build/javascripts/users-min_59b7709b2325fca2ce881c79151c05a9.js",
-                    "css": "build/stylesheets/users-min_6ce13c9e392baf3fd9484138f786976e.css"
+                    "css": "build/stylesheets/users-min_926b4c2f25575a83ef73f964c4951248.css"
                 }
             }
         };
