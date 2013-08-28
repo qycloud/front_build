@@ -9,43 +9,43 @@ describe('Build(configs)', function() {
     var build = new Build({
         config: __dirname + '/../.rbuildrc',
         store: true,
-        force: false
+        force: true
     });
 
     describe('#run()', function() {
         build.run();
 
         describe('Read __dirname + "/../build/javascripts/" directory', function() {
-            it('File controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/javascripts/controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File controllers_global_b196ed432fe056c1d251d40f1fd6349c.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/controllers_global_b196ed432fe056c1d251d40f1fd6349c.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('dc2f5e129af2225d7e5573b4ecbd5c2a');
             });
 
-            it('File home-min_1b6316803455be0c0bdbe08fd52c44b5.js md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/javascripts/home-min_1b6316803455be0c0bdbe08fd52c44b5.js';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File home-min_dd4320cf05806c3f000139b455f4d463.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/home-min_dd4320cf05806c3f000139b455f4d463.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('dc2f5e129af2225d7e5573b4ecbd5c2a');
             });
 
-            it('File users-min_f9681fdf76cf085a6c5b2295112398de.js md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File users-min_59b7709b2325fca2ce881c79151c05a9.js md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/javascripts/users-min_59b7709b2325fca2ce881c79151c05a9.js';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('62bb4f100a265fffb4f8394b738533c7');
             });
         });
 
         describe('Read __dirname + "/../build/stylesheets/" directory', function() {
-            it('File controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/stylesheets/controllers_global_15a63a0c6a738eb8de8e823d2b5aafda.css';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File controllers_global_806e041eeef5f478a718b6ed9ca9c17a.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/controllers_global_806e041eeef5f478a718b6ed9ca9c17a.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('6700e3e577966de91432a219303a54ce');
             });
 
-            it('File home-min_15a63a0c6a738eb8de8e823d2b5aafda.css md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/stylesheets/home-min_15a63a0c6a738eb8de8e823d2b5aafda.css';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File home-min_806e041eeef5f478a718b6ed9ca9c17a.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/home-min_806e041eeef5f478a718b6ed9ca9c17a.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('6700e3e577966de91432a219303a54ce');
             });
 
-            it('File users-min_48d508549dffd696499a5173ef898c13.css md5 value should be equal', function() {
-                var fileName = __dirname + '/../build/stylesheets/users-min_48d508549dffd696499a5173ef898c13.css';
-                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('');
+            it('File users-min_6ce13c9e392baf3fd9484138f786976e.css md5 value should be equal', function() {
+                var fileName = __dirname + '/../build/stylesheets/users-min_6ce13c9e392baf3fd9484138f786976e.css';
+                md5(fs.readFileSync(fileName)).substr(0, 32).should.equal('82fed323eb204bb4606112208016e34d');
             });
         });
     });
