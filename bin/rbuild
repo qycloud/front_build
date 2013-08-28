@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 var program = require('commander'),
-    shell = require('shelljs'),
     Build = require('../lib/build'),
     buildInstance,
     configPath;
@@ -21,7 +20,7 @@ if (program.config) {
         program.help();
     }
 } else {
-    configPath = shell.pwd() + '/.rbuildrc';
+    configPath = process.cwd() + '/.rbuildrc';
 }
 
 buildInstance = new Build({
