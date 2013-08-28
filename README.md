@@ -1,4 +1,68 @@
-resource_build
-==============
+# resource_build
 
-A javascript &amp; css resoure build tool for my work
+This is a tool make easier to concat and compress the javascript & css files
+
+## Installing
+
+```shell
+ $ npm install -g resource_build
+```
+
+## Getting started
+
+Create .rbuildrc in your application root directory:
+
+```
+{
+    "path": {
+        "build": {
+            "javascript": "build/javascripts",
+            "css": "build/stylesheets"
+        },
+        "components_config": "configs/components.json"
+        "resources_config": "configs/resources" 
+    },
+    "prefix": {
+        "resources_key": "controllers",
+        "resources_css": "assets/stylesheets"
+        "resources_javascript": "assets/javascripts"
+    }
+}
+
+```
+
+>- The components_config should be a json file, but resources_config can be either a json file or a directory,
+you can see the example in [tests/configs](https://github.com/NanJingBoy/resource_build/tree/master/tests/configs)
+
+>- The resources_key is the key of resource prefix(e.g. a resource key is named user@index, the full key is should be
+controllers/user@index)
+
+>- The resources_css & resources_javascript are the source file path prefix(e.g. a resource file path is defined home.js,
+the full path is should be assets/javascripts/home.js)
+
+>- In [tests/configs/resources/global.json](https://github.com/NanJingBoy/resource_build/blob/master/tests/configs/resources/global.json),
+you can found a special key named 'global', it means the resources would be loaded in every page
+
+
+## Usage
+```shell
+  $ rbuild -h
+  
+  Usage: rbuild [options]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -c, --config   set config file
+    -f, --force    build file even it exists
+    -i, --ignore   unnecessary to create rbuild.lock file in application root directory
+```
+
+## Contributors
+>- [superbug](https://github.com/superbug)
+
+## License
+>- [MIT](http://www.opensource.org/licenses/MIT)
+
+
