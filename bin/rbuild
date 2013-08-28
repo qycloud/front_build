@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var program = require('commander'),
+var fs = require('fs'),
+    program = require('commander'),
     Build = require('../lib/build'),
     buildInstance,
     configPath;
@@ -15,16 +16,20 @@ if (program.config) {
         configPath = program.args[program.args.length - 1];
     } else {
         console.log('error: option `c` requires a value');
-        program.help();
+        process.exit(1);
     }
 } else {
     configPath = process.cwd() + '/.rbuildrc';
 }
 
+if (!fs.existsSync(configPath)) {
+    console.log('error: file %s not found', configPath);
+    process.exit(1);
+}
+
 buildInstance = new Build({
     config: configPath,
     store: (program.ignore !== true),
-    force: (program.force === true),
-    log: (program.log === true)
+    force: (program.force === true)
 });
 buildInstance.run();
