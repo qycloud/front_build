@@ -9,7 +9,6 @@
     }
   ],
   "dependencies": {
-    "shelljs": "0.1.x",
     "underscore": "1.4.x",
     "MD5": "*",
     "commander": "*",
