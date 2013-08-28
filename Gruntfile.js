@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    var pkg = grunt.file.readJSON('/tmp/grunt.json');
+    var pkg = grunt.file.readJSON(require('os').tmpdir() + '/grunt.json');
     grunt.initConfig({
         concat: pkg.concat,
         uglify: pkg.uglify,
