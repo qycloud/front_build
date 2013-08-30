@@ -9,6 +9,7 @@ program.version('0.0.1')
     .option('-c, --config', 'set config file')
     .option('-f, --force', 'build file even it exists')
     .option('-i, --ignore', 'unnecessary to create rbuild.lock file in application root directory')
+    .option('-r, --replace', 'replace urls in css fils with absolute path')
     .parse(process.argv);
 
 if (program.config) {
@@ -30,6 +31,7 @@ if (!fs.existsSync(configPath)) {
 buildInstance = new Build({
     config: configPath,
     store: (program.ignore !== true),
-    force: (program.force === true)
+    force: (program.force === true),
+    replace: (program.replace === true)
 });
 buildInstance.run();
