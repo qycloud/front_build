@@ -9,7 +9,7 @@ program.version('0.0.3')
     .option('-c, --config', 'set config file')
     .option('-f, --force', 'build file even it exists')
     .option('-i, --ignore', 'unnecessary to create rbuild.lock file in application root directory')
-    .option('-r, --replace', 'replace urls in css fils with absolute path')
+    .option('-r, --replace', 'replace urls in css files with absolute path')
     .parse(process.argv);
 
 if (program.config) {
