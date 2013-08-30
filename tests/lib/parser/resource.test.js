@@ -52,7 +52,7 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 ],
                 "dest": {
                     "javascript": "build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js",
-                    "css": "build/stylesheets/users-min_8e6db7f54364d7792071e5cdfffed3a4.css"
+                    "css": "build/stylesheets/users-min_a6c13606db951a8814c614c61eb3e2db.css"
                 }
             }
         };
