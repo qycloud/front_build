@@ -53,7 +53,7 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 ## Usage
 ```shell
   $ rbuild -h
-  
+
   Usage: rbuild [options]
 
   Options:
@@ -73,6 +73,8 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 >- [MIT](http://www.opensource.org/licenses/MIT)
 
 ## Release History
+_2013-09-02   v0.0.5   Update rbuild.lock format in application root_
+
 _2013-08-30   v0.0.3   Improve the tool to replace urls in css files with absolute path_
 
 _2013-08-28   v0.0.1   Release the first version_
