@@ -73,6 +73,8 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 >- [MIT](http://www.opensource.org/licenses/MIT)
 
 ## Release History
+_2013-09-03   v0.1.0   Improve the tool to remove unuseful dest files_
+
 _2013-09-02   v0.0.7   Fix error when not defined the css in components config_
 
 _2013-09-02   v0.0.5   Update rbuild.lock format in application root_
