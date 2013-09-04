@@ -45,6 +45,7 @@ the full path is should be assets/javascripts/home.js)
 
 >- In resources configs, you may found a special key named 'global', it means the resources would be loaded in every page(e.g. [tests/configs/resources/global.json](https://github.com/NanJingBoy/resource_build/blob/master/tests/configs/resources/global.json))
 
+>- If you want to ingore the global resources, just set ignore_global true(e.g. [tests/configs/resources/home.json](https://github.com/NanJingBoy/resource_build/blob/master/tests/configs/resources/home.json))
 
 ### Usage Examples
 You can see a simple example in [tests](https://github.com/NanJingBoy/resource_build/tree/master/tests)
