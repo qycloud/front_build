@@ -1,6 +1,7 @@
 {
     "home@index": {
         "javascript": ["home.js"],
+        "ignore_global": true,
         "dest_prefix": "home-min"
     }
 }

@@ -22,15 +22,12 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
             },
             "controllers/home@index": {
                 "javascript": [
-                    "assets/javascripts/jquery/jquery.js",
                     "assets/javascripts/home.js"
                 ],
-                "css": [
-                    "assets/stylesheets/base.css",
-                ],
+                "css": [],
                 "dest": {
-                    "javascript": "build/javascripts/home-min_1b6316803455be0c0bdbe08fd52c44b5.js",
-                    "css": "build/stylesheets/home-min_b3a53237d687702e50edd770aa5c6b61.css"
+                    "javascript": "build/javascripts/home-min_be77bc51bedb3897d2bb7716866adc62.js",
+                    "css": null
                 }
             },
             "controllers/users@index": {
@@ -71,8 +68,8 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 "css": "build/stylesheets/controllers_global_b3a53237d687702e50edd770aa5c6b61.css"
             },
             "controllers/home@index": {
-                "javascript": "build/javascripts/home-min_1b6316803455be0c0bdbe08fd52c44b5.js",
-                "css": "build/stylesheets/home-min_b3a53237d687702e50edd770aa5c6b61.css"
+                "javascript": "build/javascripts/home-min_be77bc51bedb3897d2bb7716866adc62.js",
+                "css": null
             },
             "controllers/users@index": {
                 "javascript": "build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js",
