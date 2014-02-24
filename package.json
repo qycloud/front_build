@@ -1,6 +1,6 @@
 {
   "name": "resource_build",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "author": "Tom.Huang <hzlhu.dargon@gmail.com>",
   "contributors": [
     {
@@ -16,7 +16,9 @@
     "grunt-contrib-concat": "0.3.0",
     "grunt-contrib-uglify": "0.2.4",
     "grunt-css-url-replace": "*",
-    "grunt-contrib-cssmin": "0.6.1"
+    "grunt-contrib-cssmin": "0.6.1",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-contrib-clean": "0.5.0"
   },
   "devDependencies": {
     "mocha": "*",
