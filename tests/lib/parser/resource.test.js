@@ -16,8 +16,8 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                     "assets/stylesheets/base.css",
                 ],
                 "dest": {
-                    "javascript": "build/javascripts/controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js",
-                    "css": "build/stylesheets/controllers_global_b3a53237d687702e50edd770aa5c6b61.css"
+                    "javascript": "build/javascripts/controllers_global_86f59d2bf53ead28bb17d875580aad7d.js",
+                    "css": "build/stylesheets/controllers_global_3a327ad1c7a3fca9bd542f2265b8b4cf.css"
                 }
             },
             "controllers/home@index": {
@@ -26,7 +26,7 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                 ],
                 "css": [],
                 "dest": {
-                    "javascript": "build/javascripts/home-min_be77bc51bedb3897d2bb7716866adc62.js",
+                    "javascript": "build/javascripts/home-min_c23cd22a0646427b9589dae6e22e95e5.js",
                     "css": null
                 }
             },
@@ -50,8 +50,8 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
                     "assets/stylesheets/jquery/ui/themes/base/jquery.ui.dialog.css"
                 ],
                 "dest": {
-                    "javascript": "build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js",
-                    "css": "build/stylesheets/users-min_a6c13606db951a8814c614c61eb3e2db.css"
+                    "javascript": "build/javascripts/users-min_5990e59a33a6bea0583a9bcbf97ffa41.js",
+                    "css": "build/stylesheets/users-min_cb301970e7a05a9318b269b3556e452d.css"
                 }
             }
         };
@@ -64,16 +64,16 @@ describe('Resource(__dirname + "/../../.rbuildrc")', function() {
     describe('#save()', function() {
         var resources = {
             "controllers/global": {
-                "javascript": "build/javascripts/controllers_global_5ae2d350ecf717e5a0b812b044f33f87.js",
-                "css": "build/stylesheets/controllers_global_b3a53237d687702e50edd770aa5c6b61.css"
+                "javascript": "build/javascripts/controllers_global_86f59d2bf53ead28bb17d875580aad7d.js",
+                "css": "build/stylesheets/controllers_global_3a327ad1c7a3fca9bd542f2265b8b4cf.css"
             },
             "controllers/home@index": {
-                "javascript": "build/javascripts/home-min_be77bc51bedb3897d2bb7716866adc62.js",
+                "javascript": "build/javascripts/home-min_c23cd22a0646427b9589dae6e22e95e5.js",
                 "css": null
             },
             "controllers/users@index": {
-                "javascript": "build/javascripts/users-min_f9681fdf76cf085a6c5b2295112398de.js",
-                "css": "build/stylesheets/users-min_a6c13606db951a8814c614c61eb3e2db.css"
+                "javascript": "build/javascripts/users-min_5990e59a33a6bea0583a9bcbf97ffa41.js",
+                "css": "build/stylesheets/users-min_cb301970e7a05a9318b269b3556e452d.css"
             }
         };
 
