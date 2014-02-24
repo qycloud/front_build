@@ -4,25 +4,38 @@ module.exports = function(grunt) {
 
     if (replaceCssUrl) {
         grunt.initConfig({
+            copy: pkg.copy,
             concat: pkg.concat,
             uglify: pkg.uglify,
             css_url_replace: pkg.css_url_replace,
-            cssmin: pkg.cssmin
+            cssmin: pkg.cssmin,
+            clean: pkg.clean
         });
-        grunt.loadNpmTasks('grunt-contrib-concat');
+        grunt.loadNpmTasks('grunt-contrib-copy');        
         grunt.loadNpmTasks('grunt-contrib-uglify');
+        grunt.loadNpmTasks('grunt-contrib-concat');
         grunt.loadNpmTasks('grunt-css-url-replace');
         grunt.loadNpmTasks('grunt-contrib-cssmin');
-        grunt.registerTask('build', ['concat', 'uglify', 'css_url_replace', 'cssmin']);
+        grunt.loadNpmTasks('grunt-contrib-clean');
+        grunt.registerTask(
+            'build', 
+            ['copy', 'uglify', 'concat', 'css_url_replace', 'cssmin', 'clean']
+        );
     } else {
         grunt.initConfig({
+            copy: pkg.copy,
             concat: pkg.concat,
             uglify: pkg.uglify,
-            cssmin: pkg.cssmin
+            cssmin: pkg.cssmin,
+            clean: pkg.clean
         });
+        grunt.loadNpmTasks('grunt-contrib-copy');  
+        grunt.loadNpmTasks('grunt-contrib-uglify'); 
         grunt.loadNpmTasks('grunt-contrib-concat');
-        grunt.loadNpmTasks('grunt-contrib-uglify');
         grunt.loadNpmTasks('grunt-contrib-cssmin');
-        grunt.registerTask('build', ['concat', 'uglify', 'cssmin']);
+        grunt.loadNpmTasks('grunt-contrib-clean');
+        grunt.registerTask(
+            'build', ['copy', 'uglify', 'concat', 'cssmin', 'clean']
+        );
     }
 };
