@@ -34,5 +34,5 @@
   "bin": {
     "rbuild": "./bin/rbuild"
   },
-  "repository": "git://github.com/NanJingBoy/resource_build"
+  "repository": "git://github.com/nanjingboy/resource_build"
 }
