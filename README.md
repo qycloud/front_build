@@ -74,6 +74,8 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 >- [MIT](http://www.opensource.org/licenses/MIT)
 
 ## Release History
+_2014-02-25   v0.2.1   Ignore resource config if no javascript is required_
+
 _2014-02-24   v0.2.0   Change the task order of concat and uglify to increase the whole speed_
 
 _2013-11-21   v0.1.5   Update the version of depedences from the latest to stable_
