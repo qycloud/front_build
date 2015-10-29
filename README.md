@@ -5,7 +5,7 @@ This is a tool make easier to concat and compress the javascript & css files
 ## Installing
 
 ```shell
- $ npm install -g resource_build
+ $ npm install -g ay_rbuild --registry=https://registry.npm.taobao.org
 ```
 
 ## Getting started
