@@ -27,6 +27,22 @@ Create .rbuildrc in your application root directory:
         "resources_key": "controllers",
         "resources_css": "assets/stylesheets"
         "resources_javascript": "assets/javascripts"
+    },
+    "sass": {
+        "dist": {
+            "folders": [
+                {
+                    "expand": true,
+                    "cwd": "configs/scss",
+                    "src": ["*.scss"],
+                    "dest": "build/stylesheets",
+                    "ext": ".css"
+                }
+            ],
+            "files": {
+                "build/test.css": "configs/test.scss"
+            }
+        }
     }
 }
 
@@ -74,6 +90,8 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 >- [MIT](http://www.opensource.org/licenses/MIT)
 
 ## Release History
+_2015-12-09   v0.2.2   add sass parser
+
 _2014-02-25   v0.2.1   Ignore resource config if no javascript is required_
 
 _2014-02-24   v0.2.0   Change the task order of concat and uglify to increase the whole speed_
@@ -93,5 +111,3 @@ _2013-09-02   v0.0.5   Update rbuild.lock format in application root
 _2013-08-30   v0.0.3   Improve the tool to replace urls in css files with absolute path_
 
 _2013-08-28   v0.0.1   Release the first version_
-
-
