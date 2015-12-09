@@ -12,5 +12,18 @@
         "resources_key": "controllers",
         "resources_css": "assets/stylesheets",
         "resources_javascript": "assets/javascripts"
+    },
+    "sass": {
+        "dist": {
+            "folders": [
+                {
+                    "expand": true,
+                    "cwd": "configs/scss",
+                    "src": ["*.scss"],
+                    "dest": "build/stylesheets",
+                    "ext": ".css"
+                }
+            ]
+        }
     }
 }
