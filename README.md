@@ -85,6 +85,6 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 
 ## Contributors
 >- [superbug](https://github.com/superbug)
-
+>- [mtao](https://github.com/jmt33)
 ## License
 >- [MIT](http://www.opensource.org/licenses/MIT)
