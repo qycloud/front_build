@@ -1,12 +1,16 @@
 {
-  "name": "ay_rbuild",
-  "version": "0.2.2",
+  "name": "ay_front",
+  "version": "0.1",
   "author": "Tom.Huang <hzlhu.dargon@gmail.com>",
   "contributors": [
     {
       "name": "superbug",
       "email": "sunweijun1989@gmail.com"
-    }
+    },
+    {
+      "name": "mtao",
+      "email": "jmtao33@gmail.com"
+    },
   ],
   "dependencies": {
     "underscore": "1.4.x",
@@ -25,13 +29,13 @@
   },
   "keys": [
     "javascript",
-    "css",
+    "scss",
     "resource",
     "build",
     "web"
   ],
   "bin": {
-    "rbuild": "./bin/rbuild"
+    "rbuild": "./bin/front"
   },
-  "repository": "git@github.com:qycloud/resource_build.git"
+  "repository": "git@github.com:qycloud/front_build.git"
 }
