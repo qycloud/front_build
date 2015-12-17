@@ -3,10 +3,7 @@
 This is a tool make easier to concat and compress the javascript & scss files
 
 ## Installing
-
-```shell
- $ npm install -g ay_front --registry=https://registry.npm.taobao.org
-```
+```shell $ npm install -g ay_front --registry=https://registry.npm.taobao.org ```
 
 ## Getting started
 
@@ -86,5 +83,6 @@ You can see a simple example in [tests](https://github.com/NanJingBoy/resource_b
 ## Contributors
 >- [superbug](https://github.com/superbug)
 >- [mtao](https://github.com/jmt33)
+
 ## License
 >- [MIT](http://www.opensource.org/licenses/MIT)
