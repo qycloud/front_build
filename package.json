@@ -10,7 +10,7 @@
     {
       "name": "mtao",
       "email": "jmtao33@gmail.com"
-    },
+    }
   ],
   "dependencies": {
     "underscore": "1.4.x",
